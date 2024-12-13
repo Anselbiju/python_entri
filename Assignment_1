@@ -1,0 +1,74 @@
+#1. Write Python code that prints your name, student number and email address.  
+
+print("Name : ansel")
+print("Student_no : 11061")
+print("mail id : ansel@gmail.com")
+
+#2. Write Python code that prints your name, student number and email address using escape sequences.
+
+a = "Ansel"
+b = 11061
+c = "ansel@gmail.com"
+print("Name :",a)
+print("Student_no :",b)
+print("Mail :",c)
+
+#3. Write Python code that add, subtract, multiply and divide the two numbers. You can use the two numbers 14 and 7. 
+a = 14+7
+s = 14-7
+d = 14/7
+m = 14*7
+print(a ,"addition")
+print(s, "Substraction")
+print(d, "Division")
+print(m, "Multipication")
+
+#4. Write Python code that displays the numbers from 1 to 5 as steps. 
+for i in range(1, 6):
+    print(' ' * (i - 1) + str(i))
+
+#5. Write Python code that outputs the following sentence (including the quotation marks and line break) to the screen: 
+print( """
+"SDK" stands for "Software Development Kit", whereas \n
+"IDE" stands for "Integrated Development Environment". 
+""")
+
+#6.Practice and check the output
+print("python is an \"awesome\" language.")
+print("python\n\t2023")
+print('I\'m from Entri.\b')
+print("\65")
+print("\x65")
+print("Entri", "2023", sep="\n")
+print("Entri", "2023", sep="\b")
+print("Entri", "2023", sep="*", end="\b\b\b\b")
+
+
+#7.Define the variables below. Print the types of each variable. What is the sum of your variables? (Hint: use a type conversion function.) What datatype is the sum?
+num=23
+textnum="57"
+decimal=98.3
+print(type(num),type(textnum),type(decimal))
+sum = (num+int(textnum)+decimal)
+print(sum,type(sum))
+
+#8. calculate the number of minutes in a year using variables for each unit of time.
+# print a statement that describes what your code does also.
+# Create three variables to store no of days in a year, minute in a hour, 
+# hours in a day, then calculate the total minutes in a year and print the values
+#(hint) total number of minutes in an year =No.of days in an year * Hours in a day * Minutes in an hour
+days_in_a_year = 365
+minutes_in_an_hour = 60
+hours_in_a_day = 24
+total_minutes_in_a_year = days_in_a_year * hours_in_a_day * minutes_in_an_hour
+print("The total number of minutes in a year.",total_minutes_in_a_year)
+
+#9. Write Python code that asks the user to enter his/her name and then output/prints his/her name with a greeting.
+greet = input("Enter you name :")
+print("Hello",greet,"Welcome to Entri")
+
+#10. Name your file: PoundsToDollars.py Write a program that asks the user to enter an amount in pounds (£) and the program calculates and converts an amount in dollar ($)
+pound = int(input("enter the pound amount :"))
+conversion_rate = 1.30  
+dollars = pound * conversion_rate
+print("The amount in dollar is : ",dollars)
